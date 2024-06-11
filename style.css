@@ -18,10 +18,13 @@
 
 .photo::before {
   background: transparent;
-  left: -2.5rem;
-  top: -2.5rem;
+  left: -3.5rem;
+  top: -3.5rem;
   rotate: 45deg;
-  box-shadow: 0 0 1rem rgb(0 0 0 / 1);
+  /*box-shadow: 0 0 1rem rgb(0 0 0 / 1);*/
+  box-shadow: 1.25rem 0rem 1rem -1.25rem rgb(0 0 0 / 1);
+}
+
 }
 
 img {
