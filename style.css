@@ -1,19 +1,28 @@
 .photo {
-  padding: 1rem;
+  padding: 2rem;
   background: white;
   color: black;
   width: 400px;
 
   position: relative;
-  clip-path: polygon(
+  /*  clip-path: polygon(
     0% 1.55rem,
     1.55rem 0%,
     100% 0,
     100% calc(100% - 1.55rem),
     calc(100% - 1.55rem) 100%,
     0 100%
+  );*/
+  clip-path: polygon(
+    0% 3rem,
+    3rem 0%,
+    100% 0,
+    100% calc(100% - 1.55rem),
+    calc(100% - 1.55rem) 100%,
+    0 100%
   );
   /* I think I am getting confused how this is done. */
+  /*
   background: linear-gradient(
       90deg,
       transparent,
@@ -29,6 +38,23 @@
       white 1rem,
       transparent 1rem
     );
+  */
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 0.425rem,
+      rgb(0 0 0 / 0.125) 1rem,
+      white 1rem,
+      white 2rem,
+      transparent 2rem
+    ),
+    linear-gradient(
+      transparent,
+      transparent 1rem,
+      white 1rem,
+      white 2rem,
+      transparent 2rem
+    );
 }
 
 .photo::before,
@@ -42,8 +68,10 @@
 
 .photo::before {
   background: transparent;
-  left: -3.5rem;
-  top: -3.5rem;
+  /*left: -3.5rem;*/
+  /*top: -3.5rem;*/
+  left: -2.875rem;
+  top: -2.875rem;
   rotate: 45deg;
   /*box-shadow: 0 0 1rem rgb(0 0 0 / 1);*/
   box-shadow: 1.25rem 0rem 1rem -1.25rem rgb(0 0 0 / 1);
