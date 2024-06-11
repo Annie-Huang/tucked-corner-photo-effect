@@ -5,6 +5,14 @@
   width: 400px;
 
   position: relative;
+  clip-path: polygon(
+    0% 1.55rem,
+    1.55rem 0%,
+    100% 0,
+    100% calc(100% - 1.55rem),
+    calc(100% - 1.55rem) 100%,
+    0 100%
+  );
 }
 
 .photo::before,
