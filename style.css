@@ -1,5 +1,5 @@
 .photo {
-  padding: 2rem;
+  padding: 1rem;
   background: white;
   color: black;
   width: 400px;
@@ -13,6 +13,22 @@
     calc(100% - 1.55rem) 100%,
     0 100%
   );
+  /* I think I am getting confused how this is done. */
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 0.5rem,
+      white 0.5rem,
+      white 1rem,
+      transparent 1rem
+    ),
+    linear-gradient(
+      transparent,
+      transparent 0.5rem,
+      white 0.5rem,
+      white 1rem,
+      transparent 1rem
+    );
 }
 
 .photo::before,
